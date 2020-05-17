@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .container {opacity: 0.6;}
+      .wave--light {fill: #00d8ff;}
+      .wave--dark {fill: #1cbfdd;} 
+
+      .wave--light.animation{
+        animation: wave--light__animation 1s linear infinite;
+        }
+
+      .wave--dark.animation{
+        animation: wave--dark__animation 3s linear infinite;
+        }
+
+      @keyframes wave--light__animation {
+        0% { transform: translateX(0) }
+        100% { transform: translateX(-32px) }
+      } 
+
+      @keyframes wave--dark__animation {
+        0% { transform: translateX(-32px) }
+        100% { transform: translateX(0) }
+      } 
+    </style>
+  </defs>
+  <g class="container">
+    <g>
+      <path class="wave--dark animation" d="M-16,5C-7.982,5-7.705,0,0,0S8.008,5,16,5m0,0c8.018,0,8.295-5,16-5s8.008,5,16,5m0,0c8.018,0,8.295-5,16-5s8.008,5,16,5m0,0c8.018,0,8.295-5,16-5s8.008,5,16,5"/>
+    </g>
+    <g>
+      <rect class="wave--light" y="5" width="32" height="27"/>
+      <path class="wave--light animation" d="M0,5C8.018,5,8.295,0,16,0s8.008,5,16,5m0,0c8.018,0,8.295-5,16-5s8.008,5,16,5"></path>
+    </g>
+  </g>
+</svg>

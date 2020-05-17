@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .container {opacity: 0.6;}
+      .wave--light {fill: #00d8ff;}
+    </style>
+  </defs>
+  <g class="container">
+    <g>
+      <rect class="wave--light" width="32" height="32"/>
+    </g>
+  </g>
+</svg>
